@@ -1,0 +1,88 @@
+.Note2Container {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    width: 50vw;
+    box-shadow: 2px 2px 2px 2px rgb(233, 232, 232);
+    border-radius: 9px;
+}
+
+.Note2Title {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+.Note2Title input {
+    width: 80%;
+    height: 80%;
+    border-radius: 7px;
+    /* border: 1px solid gray; */
+    border-color: transparent;
+    font-size: medium;
+}
+
+.Note2Text {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30%;
+    width: 93%;
+}
+
+.Note2Text input {
+    width: 80%;
+    height: 80%;
+    border-radius: 7px;
+    /* border: 1px solid gray; */
+    border-color: transparent;
+    font-size: medium;
+}
+
+.Note2footer {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+.notes2icons {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    width: 70%;
+    /* cursor: pointer; */
+}
+
+.close {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90%;
+    width: 20%;
+}
+
+.close button {
+    height: 70%;
+    width: 60%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
