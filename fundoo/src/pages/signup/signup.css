@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.Header {
+    border: 1px Solid grey;
+    border-radius: 9px;
+    height: 90vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.table1 {
+    /* border: 1px Solid grey; */
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+}
+
+.box1 {
+    /* border: 1px Solid black; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+ 
+   
+}
+
+
+.box2 {
+    /* border: 1px Solid black; */
+    font-size: x-large;
+    height: 7%;
+    width: 100%;
+    display: flex;
+  
+}
+
+.box3 {
+    /* border: 1px Solid black; */
+    height: 10%;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 20px; */
+    
+}
+
+
+.box6 {
+    /* border: 1px Solid black; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 20px; */
+}
+.table1 span{
+    color: grey;
+    width: 100%;
+    font-size: 0.8rem;
+    position: absolute;
+    left: -110px;
+    top:300px
+  }
+  .table1 a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #3498db;
+    position: absolute;
+    top:320px;
+    left: 2px;
+
+    
+  }
+
+.box7 {
+    /* border: 1px Solid black; */
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-size: large;
+}
+
+.box8 {
+    /* border: 1px Solid black; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+    font-size: large;
+}
+
+
+
+.table2 {
+    /* border: 1px Solid grey; */
+    /* margin-left: 5px; */
+
+    width: 45%;
+
+}
+
+.tbox1 {
+    /* border: 1px Solid black; */
+    height: 68%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.tbox1 img{
+    width: 100%;
+  }
+  .tbox2 p{
+    text-align: center;
+    margin: auto;
+    max-width: 16rem;
+  }
