@@ -1,0 +1,65 @@
+.Note3Container {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    width: 18vw;
+    box-shadow: 2px 2px 2px 2px rgb(233, 232, 232);
+    border-radius: 9px;
+    /* margin: 10% 10% 0% 10%;     */
+    margin-right: 20px;
+}
+
+.Note3Title {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 18%;
+    width: 90%;
+}
+
+.Note3Title input {
+    width: 80%;
+    height: 80%;
+    border-radius: 7px;
+    border: 1px solid gray;
+    border-color: transparent;
+    font-size: medium;
+}
+
+.Note3Text {
+    /* border: 1px solid black; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    /* align-items: center; */
+    height: 56%;
+    width: 90%;
+}
+
+.Note3Text textarea {
+    width: 94%;
+    height: 80%;
+    border-radius: 7px;
+    border: 1px solid gray;
+    border-color: transparent;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Note3footer {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 18%;
+    width: 100%;
+}
