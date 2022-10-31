@@ -1,15 +1,16 @@
 import React from 'react'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import './signin.css'
+import './form.css'
 import { useState } from 'react';
-import { login } from '../../services/userService';
-
+import { login } from '../../sevices/userService';
+import { useNavigate } from 'react-router-dom';
 const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
 const passwordRegex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()])([a-zA-Z0-9]*).{8,}$/;
 
 
 function Signin() {
+    const navigate=useNavigate()
     const [signinObj, setSigninObj] = useState ({email:"",password:""}) 
     const [regexObj,setRegexObj] = useState ({emailBorder:false,emailHelper:"",passwordBorder:false,passwordHelper:""})
     const takeUserName=(event) => {
@@ -65,6 +66,7 @@ function Signin() {
             login(signinObj).then((response) => {
                 console.log(response);
                 localStorage.setItem("token",response.data.id)
+                navigate('/dashboard')
 
 
             })
@@ -74,6 +76,9 @@ function Signin() {
             console.log("login success")
 
         }
+    }
+    const createAccount=()=>{
+        navigate('/signup')
     }
     
     return (
@@ -86,22 +91,18 @@ function Signin() {
                 </div>
                 <div class="container2">
                 
-                <TextField fullWidth label="Email or phone" id="Email" autoComplete='off'
-                onChange={takeUserName} error={regexObj.emailBorder} helperText={regexObj.emailHelper}/>
+                <TextField fullWidth label="Email or phone" id="Email" autoComplete='off' onChange={takeUserName} error={regexObj.emailBorder} helperText={regexObj.emailHelper}/>
                         <a>Forgot email?</a>
                        
-                <TextField fullWidth label="Password" id="Password" 
-                onChange={takePassword} error={regexObj.passwordBorder} helperText={regexObj.passwordHelper}/>
+                <TextField fullWidth label="Password" id="Password"  onChange={takePassword} error={regexObj.passwordBorder} helperText={regexObj.passwordHelper}/>
                     <div class="child4">
                         Not your computer? Use Guest mode to sign in privately <br />
                         <a href=" " >Learn More</a>
                     </div>
                     <div class="child5">
-                        <Button variant="text">Create account</Button>
+                        <Button variant="text" onClick={createAccount}>Create account</Button>
 
-                        <Button variant="contained"
-                         onClick={submit}
-                         >Next</Button>
+                        <Button variant="contained" onClick={submit}>Next</Button>
                     </div>
                 </div>
             </div>

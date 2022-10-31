@@ -2,8 +2,8 @@ import React from 'react'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
-import './signup.css'
-import { signUp } from '../../services/userService';
+import './signupp.css'
+import { signUp } from '../../sevices/userService';
 const firstNameRegex = /^[A-Z]{1}[a-z]{2,}$/;
 const lastNameRegex = /^[A-Z]{1}[a-z]{2,}$/;
 const emailRegex =  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;

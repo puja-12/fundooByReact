@@ -1,13 +1,16 @@
 .Note1Container {
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 8vh;
-    width: 40vw;
-    box-shadow: 2px 2px 2px 2px rgb(233, 232, 232);
+    height: 6vh;
+    width: 45vw;
+    box-shadow: 2px 2px 5px 5px rgb(233, 232, 232);
     border-radius: 9px;
+    position: relative;
+    left:500px;
+    bottom:40px;
 }
 
 .Note1Text {

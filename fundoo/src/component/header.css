@@ -1,12 +1,15 @@
 .headerContainer {
-    border: 1px solid grey;
+    border: 1px solid rgb(233, 232, 232);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 9vh;
     width: 100vw;
+  
     /* margin-top: 0px; */
+    /* position: relative; */
+    /* bottom: 25px; */
 }
 
 .icon1 {
@@ -18,16 +21,18 @@
     justify-content: space-evenly;
     align-items: center;
     /* color: grey; */
+    position: relative;
+    right:18px;
 }
 
 .keeptext {
-    font-size: x-large;
+    font-size: 22px;
     color: rgb(105, 97, 97);
 }
 
 .icon2 {
     /* border: 1px solid black; */
-    width: 60vw;
+    width: 53vw;
     height: 70%;
     display: flex;
     flex-direction: row;
@@ -36,14 +41,16 @@
     /* background-color: rgb(243, 242, 242); */
     box-shadow: 1px 1px 1px 1px rgb(233, 232, 232);
     border-radius: 9px;
+
 }
 
 .icon2 input {
     width: 70%;
     height: 80%;
     border-radius: 7px;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
     border-color: transparent;
+   
 }
 
 .icon3 {
@@ -54,6 +61,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+    left:80px
 }
 
 .icon4 {
@@ -64,4 +73,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+    left:33px
 }
